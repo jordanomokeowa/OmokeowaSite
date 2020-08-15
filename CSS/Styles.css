@@ -1,0 +1,193 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  position: relative;
+  background-image: linear-gradient(to bottom, black, black, #222831, #222831,#393e46,#393e46);
+}
+
+h1 {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: "Montserrat-Black";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3{
+  display: inline-block;
+}
+hr{
+  border-top: 0.1rem solid white;
+  width: 70%;
+}
+td {
+  padding: 1em;
+}
+
+table {
+  background-color: white;
+}
+
+li{
+  padding: 0.5rem;
+}
+#carouselExampleCaptions{
+  width:80%;
+  margin:0 auto 0 auto;
+  border: 0.3rem solid black;
+  text-align: center;
+}
+#skills-hr{
+  width:100;
+}
+.opacity{
+  opacity: 0.3;
+}
+.nwul{
+  display: inline-block;
+  text-align: left;
+}
+
+.carousel-item{
+  height: 30rem;
+}
+
+.description2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.experience-div{
+
+  width: 80%;
+  margin: 0 auto;
+  border: 0.2rem solid black;
+}
+.intro{
+  width: 65%;
+  display: inline-block;
+  text-align: center;
+  padding: 2rem auto 2rem auto;
+}
+
+.row1 {
+  width: 100%;
+  display: flex;
+}
+
+.row2 {
+  width: 100%;
+  display: flex;
+}
+
+.row3 {
+  width: 100%;
+  display: flex;
+}
+
+.rocket {
+  margin-left: -70%
+}
+
+.roledescription {
+  text-align: left;
+}
+
+.satellite {
+  margin-left: -40%;
+}
+
+.space {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.skills-div{
+  margin:0 auto 0 auto;
+  display:inline-block;
+  text-align:left;
+  padding-top:2rem;
+}
+.skills-img{
+  height: 2rem;
+}
+.skills1 {
+  text-align: center;
+  background-color: green;
+}
+
+.skills2 {
+  text-align: center;
+  background-color: orange;
+  margin: 0;
+}
+
+
+.topHeading2 {
+  font-family: "montserrat-black";
+  font-size: 4.5rem;
+  color: white;
+  top: 12%;
+
+}
+
+.description {
+  border: 1px solid;
+  color: black;
+  background-color:#EEEEEE;
+}
+
+.textcolor {
+  color: white;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  z-index: -1
+}
+
+.top-sect {
+  top: 0;
+  text-align: center;
+  display: block;
+  height: 32%;
+  left: 0;
+  right: 0;
+}
+
+.middle-sect {
+  color: white;
+  opacity: 0.85;
+  position: relative;
+  top: 32%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.bottom-sect {
+  /*  background-color: red;*/
+}
+
+.small_img {
+  width: 60%;
+  margin: 0 auto;
+}
+.bk-cl-turqoise{
+  background-color: #00adb5;
+}
+.testGreen{
+  background-color: green;
+}
+.testRed{
+  background-color: red;
+}
+.testBlue{
+  background-color: blue;
+}
+.testGrey{
+  background-color: grey;
+}
