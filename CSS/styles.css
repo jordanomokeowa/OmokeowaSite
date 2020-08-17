@@ -11,7 +11,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-body {
+#body-index {
   position: relative;
   background-image: linear-gradient(to bottom, black, black, #222831, #222831,#393e46,#393e46);
 }
@@ -53,6 +53,9 @@ li{
   width:100;
 }
 
+#body-projects{
+  background-color: black;
+}
 
 /* Classes */
 .opacity{
@@ -162,13 +165,11 @@ li{
   z-index: -1
 }
 
-.top-sect {
+.top-sect{
   top: 0;
   text-align: center;
-  display: inline;
-  height: 32%;
-  left: 0;
-  right: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .middle-sect {
