@@ -57,6 +57,10 @@ li{
   background-color: black;
 }
 
+/* Bootstrap edits */
+.container{
+  padding: 0 0;
+}
 /* Classes */
 .opacity{
   opacity: 0.3;
