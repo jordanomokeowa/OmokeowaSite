@@ -165,7 +165,7 @@ li{
 .top-sect {
   top: 0;
   text-align: center;
-  display: block;
+  display: inline;
   height: 32%;
   left: 0;
   right: 0;
