@@ -77,13 +77,14 @@ li{
 .description2 {
   margin-top: 2rem;
   text-align: center;
+  padding: 1rem auto;
 }
 
 .experience-div{
 
   width: 80%;
   margin: 0 auto;
-  border: 0.2rem solid black;
+  padding: 0 5rem;
 }
 .intro{
   width: 65%;
