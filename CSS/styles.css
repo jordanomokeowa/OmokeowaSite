@@ -11,18 +11,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-#body-index {
-  position: relative;
-  background-image: linear-gradient(to bottom, black, black, #222831, #222831,#393e46,#393e46);
-}
 
-h1 {
+
+h1, h2,h4{
   padding-bottom: 2rem;
   text-align: center;
-  font-family: "Montserrat-Black";
-  font-size: 3rem;
+  font-family: 'Roboto Mono', monospace;
   line-height: 1.5;
 }
+
 h3{
   display: inline-block;
 }
@@ -39,7 +36,7 @@ table {
 }
 
 li{
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 /*IDs*/
@@ -56,10 +53,24 @@ li{
 #body-projects{
   background-color: black;
 }
-
+#body-index {
+  position: relative;
+  background-image: linear-gradient(to bottom, black, black, #222831, #222831,#393e46,#393e46);
+}
+#h1experience{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 /* Bootstrap edits */
 .container{
   padding: 0 0;
+}
+
+.row{
+  padding: 2rem;
+}
+.carousel-indicators li{
+  height:1px;
 }
 /* Classes */
 .opacity{
