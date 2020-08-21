@@ -37,6 +37,11 @@ table {
 
 li{
   padding: 1rem;
+
+}
+
+ul.newul{
+  font-size: 1.3rem;
 }
 
 /*IDs*/
@@ -56,7 +61,7 @@ li{
 }
 #body-index {
   position: relative;
-  background-image: linear-gradient(to bottom, black, black, #222831, #222831,#393e46,#393e46);
+  background-image: linear-gradient(to bottom, black, black, black, black,black,black,#222831,#393e46);
 }
 #h1experience{
   padding-bottom: 0;
@@ -74,6 +79,7 @@ li{
   height:1px;
 }
 /* Classes */
+
 .opacity{
   opacity: 0.3;
 }
@@ -96,13 +102,17 @@ li{
 
   width: 80%;
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 0 1rem;
 }
 .intro{
   width: 65%;
   display: inline-block;
   text-align: center;
   padding: 2rem auto 2rem auto;
+}
+
+.para1, .para2, .para3{
+  font-size: 1.7rem;
 }
 
 .row1 {
@@ -146,6 +156,10 @@ li{
 .skills-img{
   height: 2rem;
 }
+.skills-sect{
+  color: white;
+  text-align: center;
+}
 .skills1 {
   text-align: center;
   background-color: green;
@@ -159,10 +173,10 @@ li{
 
 
 .topHeading2 {
-  font-family: "montserrat-black";
+  /* /font-family: "montserrat-black"; */
   font-size: 4.5rem;
   color: white;
-  top: 12%;
+
 
 }
 
