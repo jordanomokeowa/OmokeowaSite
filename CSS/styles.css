@@ -19,7 +19,9 @@ h1, h2,h4{
   font-family: 'Roboto Mono', monospace;
   line-height: 1.5;
 }
-
+h2{
+  font-size: 2.7rem;
+}
 h3{
   display: inline-block;
 }
@@ -37,6 +39,7 @@ table {
 
 li{
   padding: 1rem;
+  font-size: 1.9rem;
 
 }
 
