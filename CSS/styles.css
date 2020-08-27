@@ -1,8 +1,4 @@
-/* JS */
-.huge{
-  font-size: 10rem;
-  color: red;
-}
+
 
 /* tag selectors*/
 html {
@@ -12,11 +8,15 @@ html {
   box-sizing: inherit;
 }
 
+body{
+  font-family: 'Roboto Mono', monospace;
+  background-image: linear-gradient(to bottom, black, black, black, black,black,black,#222831,#393e46);
+}
+
 
 h1, h2,h4{
   padding-bottom: 2rem;
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
   line-height: 1.5;
 }
 h2{
@@ -24,10 +24,13 @@ h2{
 }
 h3{
   display: inline-block;
+  font-size: 2rem;
+  margin-top: 3rem;
 }
 hr{
   border-top: 0.1rem solid white;
   width: 70%;
+  margin: 1rem auto;
 }
 td {
   padding: 1em;
@@ -55,17 +58,14 @@ ul.newul{
   text-align: center;
 }
 #skills-hr{
-  width:100;
+  width:50%;
 }
 
 #body-projects{
   background-color: black;
   color: white;
 }
-#body-index {
-  position: relative;
-  background-image: linear-gradient(to bottom, black, black, black, black,black,black,#222831,#393e46);
-}
+
 #h1experience{
   padding-bottom: 0;
   margin-bottom: 0;
@@ -74,15 +74,24 @@ ul.newul{
 .container{
   padding: 0 0;
 }
-
 .row{
   padding: 2rem;
 }
 .carousel-indicators li{
   height:1px;
 }
-/* Classes */
+.carousel-item{
+  height: 50rem;
+}
 
+/* Classes */
+.intro{
+  height: 50rem;
+  font-size: 2.5rem;
+}
+.fadein{
+  opacity: 0;
+}
 .opacity{
   opacity: 0.3;
 }
@@ -91,9 +100,6 @@ ul.newul{
   text-align: left;
 }
 
-.carousel-item{
-  height: 30rem;
-}
 
 .description2 {
   margin-top: 2rem;
@@ -111,12 +117,20 @@ ul.newul{
   width: 65%;
   display: inline-block;
   text-align: center;
-  padding: 2rem auto 2rem auto;
+  padding: 0;
+  margin 0;
+  transition: 0.5s;
+  font-size: 2.5rem;
 }
 
-.para1, .para2, .para3{
+.row{
   font-size: 1.7rem;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+
 }
+
 
 .row1 {
   width: 100%;
@@ -147,8 +161,13 @@ ul.newul{
 
 .space {
   object-fit: cover;
+  z-index: -1;
+}
+
+.skills{
   z-index: 0;
 }
+
 
 .skills-div{
   margin:0 auto 0 auto;
@@ -175,8 +194,7 @@ ul.newul{
 }
 
 
-.topHeading2 {
-  /* /font-family: "montserrat-black"; */
+.topHeading {
   font-size: 4.5rem;
   color: white;
 
@@ -205,20 +223,16 @@ ul.newul{
   text-align: center;
   display: block;
   margin: 0 auto;
+  z-index: 0;
 }
 
-.middle-sect {
-  color: white;
-  opacity: 0.85;
-  position: relative;
-  top: 32%;
-  margin-bottom: 2%;
-  text-align: center;
-}
+
 
 .bottom-sect {
-  /*  background-color: red;*/
+  transition: 0.7s;
 }
+
+
 
 .small_img {
   width: 60%;

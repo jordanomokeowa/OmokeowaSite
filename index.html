@@ -8,6 +8,7 @@
   <link rel="icon" href="css/favicon.ico">
 
   <!-- style sheet -->
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="CSS/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -18,13 +19,16 @@
   <!-- bootstrap scripts -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- mdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.js" type="text/javascript"></script>
+
 
   <!-- twitter linkedin icon etc -->
-  <script src="https://kit.fontawesome.com/375a524f4c.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/375a524f4c.js" SameSite=None crossorigin="anonymous"></script>
 </head>
 
-<body id="body-index">
-  <section id="title">
+<body>
+  <section>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="Index.html">Jordan Omokeowa</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,8 +46,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact Me</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item"
-                href="https://www.linkedin.com/in/jordanomokeowa/">Linkedn</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/jordanomokeowa/">Linkedn</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="https://github.com/jordanomokeowa">Github</a>
             </div>
@@ -52,114 +55,117 @@
       </div>
     </nav>
   </section>
- <br>
- <br>
+  <br>
+  <br>
 
   <section>
     <div class="head">
       <img class="space" src="myimages/space.png" alt="" width="100%">
     </div>
 
-    <div class="top-sect">
-      <img style="padding-top:1rem" src="myimages/bitmoji_hello.png" alt="" width="250">
+    <div class="top-sect ">
+      <img class=""style="padding-top:1rem" src="myimages/bitmoji_hello.png" alt="" width="40%">
       <br>
-      <hr>
-
-      <div class="intro" style="color:white">
-        <h2 class="topHeading2">I'm Jordan</h2>
-        <p class="col-md-12 para1" style="color:white"><em>BSc Motorsport Engineering Graduate & Self Taught Software Developer</em></p>
-        <br>
-        <p class="para2" style="color:white"> An Engineering grad using my strong mathematical and logic oriented skillset to build a career in software.</p>
-        <br>
-          <p class="para3">Currently based in <strong>Manchester</strong> <img id="flag" src="https://openmoji.org/data/color/svg/1F1EC-1F1E7.svg" width="30" alt="UK flag">
-        </p>
+      <div class="fadein">
+        <hr>
+        <div class="intro" style="color:white">
+          <h2 class="topHeading">I'm Jordan</h2>
+          <p class="col-md-12 para1 " style="color:white"><em>BSc Motorsport Engineering Graduate & Self Taught Software Developer</em></p>
+          <br>
+          <p class="para2 " style="color:white"> An Engineering grad using my strong mathematical and logic oriented skillset to build a career in software.</p>
+          <br>
+          <p class="para3 ">Currently based in <strong>Manchester</strong> <img id="flag" src="https://openmoji.org/data/color/svg/1F1EC-1F1E7.svg" width="30" alt="UK flag">
+          </p>
+        </div>
+        <hr>
       </div>
     </div>
 
   </section>
-  <hr>
 
-  <section class="skills">
-    <!-- boostrap carousel start -->
-    <div id="carouselExampleCaptions" class="carousel slide" style="" data-ride="carousel" data-interval="4000">
-      <h2 style="text-align:center; color:white">Skills & Technologies</h2>
-      <ol class="carousel-indicators" style="margin-bottom:0">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
+  <section class="skills ">
+    <div class="fadein">
+      <div id="carouselExampleCaptions" class="carousel slide" style="" data-ride="carousel" data-interval="4000">
+        <h2 style="text-align:center; color:white">Skills & Technologies</h2>
+        <ol class="carousel-indicators" style="margin-bottom:0">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
 
-        <div class="carousel-item active" style="background:rgba(187, 225, 250,0.2); color: white">
-          <div class="skills-div" style="">
-            <img class="skills-img" src="myimages/js.png" alt="">
-            <h3 style="padding-left: 2rem">Javascript, jQuery</h3>
-            <hr id="skills-hr">
-            <img class="skills-img" src="myimages/python.png" alt="">
-            <h3 style="padding-left: 2rem">Python</h3>
-            <hr id="skills-hr">
-            <img class="skills-img" src="myimages/css.png" alt="">
-            <h3 style="padding-left: 2rem">CSS, Bootstrap</h3>
-            <hr id="skills-hr">
-            <img class="skills-img" src="myimages/html.png" alt="">
-            <h3 style="padding-left: 2rem">HTML</h3>
-            <hr id="skills-hr">
-            <img class="skills-img" src="myimages/computer.png" alt="">
-            <h3 style="padding-left: 2rem">Matlab</h3>
-          </div>
-
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Languages & Tools</h5>
-          </div>
-        </div>
-
-
-        <div class="carousel-item" style="background:rgb(50,130,184,0.2); color:white">
+          <div class="carousel-item active" style="background:rgba(187, 225, 250,0.2); color: white">
             <div class="skills-div" style="">
-          <h3 style="padding-left: 2rem">Data Analysis</h3>
-            <hr id="skills-hr">
-          <h3 style="padding-left: 2rem">Computer Aided Design</h3>
-            <hr id="skills-hr">
-          <h3 style="padding-left: 2rem">Mathematics</h3>
-            <hr id="skills-hr">
-          <h3 style="padding-left: 2rem">Web Development</h3>
-            <hr id="skills-hr">
-          <h3 style="padding-left: 2rem">Electronics</h3>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>General</h5>
-          </div>
-        </div>
-        </div>
+              <img class="skills-img" src="myimages/js.png" alt="">
+              <h3 style="padding-left: 2rem">Javascript, jQuery</h3>
+              <hr id="skills-hr">
+              <img class="skills-img" src="myimages/python.png" alt="">
+              <h3 style="padding-left: 2rem">Python</h3>
+              <hr id="skills-hr">
+              <img class="skills-img" src="myimages/css.png" alt="">
+              <h3 style="padding-left: 2rem">CSS, Bootstrap</h3>
+              <hr id="skills-hr">
+              <img class="skills-img" src="myimages/html.png" alt="">
+              <h3 style="padding-left: 2rem">HTML</h3>
+              <hr id="skills-hr">
+              <img class="skills-img" src="myimages/computer.png" alt="">
+              <h3 style="padding-left: 2rem">Matlab</h3>
+            </div>
 
-        <div class="carousel-item" style="background:rgb(135,206,235,0.2); color:white">
-          <div class="skills-div">
-          <h3 style="padding-left: 2rem">Interpersonal Skills</h3>
-            <hr id="skills-hr">
-          <h3 style="padding-left: 2rem">Teamwork</h3>
-            <hr id="skills-hr">
-          <h3 style="padding-left: 2rem">Organisation</h3>
-            <hr id="skills-hr">
-          <h3 style="padding-left: 2rem">Tech Trend Awareness</h3>
-            <hr id="skills-hr">
-          <h3 style="padding-left: 2rem">Independant Learning</h3>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Miscellaneous</h5>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Languages & Tools</h5>
+            </div>
           </div>
+
+
+          <div class="carousel-item" style="background:rgb(50,130,184,0.2); color:white">
+            <div class="skills-div" style="">
+              <h3 style="padding-left: 2rem">Data Analysis</h3>
+              <hr id="skills-hr">
+              <h3 style="padding-left: 2rem">Computer Aided Design</h3>
+              <hr id="skills-hr">
+              <h3 style="padding-left: 2rem">Mathematics</h3>
+              <hr id="skills-hr">
+              <h3 style="padding-left: 2rem">Web Development</h3>
+              <hr id="skills-hr">
+              <h3 style="padding-left: 2rem">Electronics</h3>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>General</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background:rgb(135,206,235,0.2); color:white">
+            <div class="skills-div">
+              <h3 style="padding-left: 2rem">Interpersonal Skills</h3>
+              <hr id="skills-hr">
+              <h3 style="padding-left: 2rem">Teamwork</h3>
+              <hr id="skills-hr">
+              <h3 style="padding-left: 2rem">Organisation</h3>
+              <hr id="skills-hr">
+              <h3 style="padding-left: 2rem">Tech Trend Awareness</h3>
+              <hr id="skills-hr">
+              <h3 style="padding-left: 2rem">Independant Learning</h3>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Miscellaneous</h5>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-<!-- end -->
+
+    <hr>
   </section>
-  <hr>
   <section class="bottom-sect">
 
     <div class="bottom-sect experience-div">
@@ -173,7 +179,7 @@
         </div>
         <div class="row">
           <div class="description2 col-lg-3 col-md-12">
-            <h4>Software Analyst</h4>
+            <h3>Software Analyst</h3>
             <p>“Autonomous Road Event Activity Detection” Paper (Co-author)</p>
             <p><em>Jul2019-Feb2020</em></p>
           </div>
@@ -187,7 +193,7 @@
         </div>
         <div class="row">
           <div class="description2 col-lg-3 col-md-12" style="text-align:center">
-            <h4>Motorsport Engineering Student</h4>
+            <h3>Motorsport Engineering Student</h3>
             <p>Oxford Brookes University</p>
             <p><em>Sept2017-May2020</em></p>
           </div>
@@ -201,7 +207,7 @@
         </div>
         <div class="row">
           <div class="description2 col-lg-3 col-md-12" style="text-align:center">
-            <h4>Bartender</h4>
+            <h3>Bartender</h3>
             <p>The Botanist - Alderly Edge </p>
             <p><em>Apr2016-Sept2019</em></p>
           </div>
@@ -242,9 +248,9 @@
   <br>
   <hr>
 
-    <br>
-    <br>
-    <br>
+  <br>
+  <br>
+  <br>
 
 
 
@@ -254,18 +260,18 @@
 
 
 
-    <div style="text-align:center">
-      <!-- span or i anchor tags are interchangable as shown -->
-      <button type="button" class="btn btn-primary btn-lg" href="https://www.facebook.com"> <span class="fab fa-linkedin"></span><a href="https://www.linkedin.com/in/jordanomokeowa/">Linkedin</a></button>
-      <button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-github"></i> <a href="https://github.com/jordanomokeowa">Github</a> </button>
-      <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-twitter-square"></i>  Twitter </button>
+  <div style="text-align:center">
+    <!-- span or i anchor tags are interchangable as shown -->
+    <button type="button" class="btn btn-primary btn-lg" href="https://www.facebook.com"> <span class="fab fa-linkedin"></span><a href="https://www.linkedin.com/in/jordanomokeowa/">Linkedin</a></button>
+    <button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-github"></i> <a href="https://github.com/jordanomokeowa">Github</a> </button>
+    <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-twitter-square"></i> Twitter </button>
 
-      <p>© 2020 Jordan Omokeowa.</p>
-    </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js" charset="utf-8"></script>
-  </body>
+    <p>© 2020 Jordan Omokeowa.</p>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
 
 
 
