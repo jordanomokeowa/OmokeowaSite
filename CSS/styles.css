@@ -19,15 +19,13 @@ h1, h2,h4{
   text-align: center;
   line-height: 1.5;
 }
-h2{
-  font-size: 2.7rem;
-}
+
 h3{
   display: inline-block;
   font-size: 2rem;
   margin-top: 3rem;
 }
-hr{
+.wht-hr{
   border-top: 0.1rem solid white;
   width: 70%;
   margin: 1rem auto;
@@ -46,8 +44,8 @@ li{
 
 }
 
-ul.newul{
-  font-size: 1.3rem;
+.blk-hr{
+  background-color:black;
 }
 
 /*IDs*/
@@ -78,17 +76,18 @@ ul.newul{
   padding: 2rem;
 }
 .carousel-indicators li{
-  height:1px;
+  height:0.1rem;
+  width: 0.1rem;
+  border-radius: 100%;
+
 }
-.carousel-item{
-  height: 50rem;
+
+.carousel{
+  height: auto;
+  line-height: 5rem;
 }
 
 /* Classes */
-.intro{
-  height: 50rem;
-  font-size: 2.5rem;
-}
 
 .opacity{
   opacity: 0.3;
@@ -119,16 +118,12 @@ ul.newul{
   margin 0;
   transition: 0.5s;
   font-size: 2.5rem;
+  height:auto;
 }
 
 .row{
   font-size: 1.7rem;
-  transition: 0.5s;
-  transform-origin: left;
-  transform: scaleX(1);
-
 }
-
 
 .row1 {
   width: 100%;
@@ -195,8 +190,6 @@ ul.newul{
 .topHeading {
   font-size: 4.5rem;
   color: white;
-
-
 }
 
 .description {
@@ -213,15 +206,15 @@ ul.newul{
 .head {
   position: absolute;
   top: 0;
-  z-index: -1
+  z-index:-1;
 }
 
 .top-sect{
-  top: 0;
   text-align: center;
   display: block;
   margin: 0 auto;
   z-index: 0;
+  width: 100%;
 }
 
 
