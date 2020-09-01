@@ -1,38 +1,42 @@
+/* ==== MOBILE ========== */
+@media screen and (max-width: 900px){
+  #im-jordan{
+    font-size: 6rem;
+    font-family: 'Amatic SC', cursive;
+  }
+
+  .intro p{
+    font-size: 200%;
+  }
+
+}
+/* ================= */
 
 
 /* tag selectors*/
-html {
+/* html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
-}
+} */
 
 body{
   font-family: 'Roboto Mono', monospace;
   background-image: linear-gradient(to bottom, black, black, black, black,black,black,#222831,#393e46);
-}
-
-
-h1, h2,h4{
-  padding-bottom: 2rem;
   text-align: center;
-  line-height: 1.5;
+  color: white;
 }
 
-h3{
-  display: inline-block;
-  font-size: 2rem;
-  margin-top: 3rem;
-}
+
+
+
 .wht-hr{
   border-top: 0.1rem solid white;
   width: 70%;
   margin: 1rem auto;
 }
-td {
-  padding: 1em;
-}
+
 
 table {
   background-color: white;
@@ -44,9 +48,6 @@ li{
 
 }
 
-.blk-hr{
-  background-color:black;
-}
 
 /*IDs*/
 #carouselExampleCaptions{
@@ -55,107 +56,112 @@ li{
   border: 0.3rem solid black;
   text-align: center;
 }
-#skills-hr{
-  width:50%;
-}
+
 
 #body-projects{
   background-color: black;
   color: white;
 }
 
-#h1experience{
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
 /* Bootstrap edits */
-.container{
-  padding: 0 0;
-}
+
 .row{
   padding: 2rem;
 }
-.carousel-indicators li{
-  height:0.1rem;
-  width: 0.1rem;
-  border-radius: 100%;
-
+ol.carousel-indicators li{
+  height:0.1vh;
+  width: 0.1vw;
+  background-color:black;
 }
+
+ol.carousel-indicators li.active{
+  background-color: darkblue;
+}
+
+/* ===================================================================== */
+/* ======================TOP SECTION =============== */
+.head {
+  position: absolute;
+  top: 0;
+  z-index:-1;
+}
+.top-sect{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  top:2vh;
+}
+#im-jordan{
+  font-size: 6rem;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.intro{
+  width: 65%;
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  height:auto;
+  color: white;
+}
+.intro p{
+  font-size: 200%;
+}
+/* TOP END */
+
 
 .carousel{
   height: auto;
   line-height: 5rem;
 }
-
-/* Classes */
-
-.opacity{
-  opacity: 0.3;
+.skills{
+  text-align: center;
 }
-.nwul{
-  display: inline-block;
+.skills hr{
+  border-top: 0.1rem solid white;
+  width: 70%;
+  margin: 1rem auto;
+}
+.skills-div p{
+  margin-left: 0;
+}
+/* ------------- */
+.experience-div{
+  width: 90%;
+  margin: 0 auto;
+}
+.row{
+  font-size: 1.7rem;
+  padding: 0 0;
   text-align: left;
 }
+/* ================================================== */
+
+
 
 
 .description2 {
-  margin-top: 2rem;
+  margin:1rem auto 2rem auto;
   text-align: center;
   padding: 1rem auto;
 }
 
-.experience-div{
 
-  width: 80%;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-.intro{
-  width: 65%;
-  display: inline-block;
-  text-align: center;
-  padding: 0;
-  margin 0;
-  transition: 0.5s;
-  font-size: 2.5rem;
-  height:auto;
-}
 
-.row{
-  font-size: 1.7rem;
-}
 
-.row1 {
-  width: 100%;
-  display: flex;
-}
 
-.row2 {
-  width: 100%;
-  display: flex;
-}
 
-.row3 {
-  width: 100%;
-  display: flex;
-}
 
-.rocket {
-  margin-left: -70%
-}
 
-.roledescription {
-  text-align: left;
-}
 
-.satellite {
-  margin-left: -40%;
-}
 
-.space {
-  object-fit: cover;
-  z-index: -1;
-}
+
+
+
 
 .skills{
   z-index: 0;
@@ -165,70 +171,38 @@ li{
 .skills-div{
   margin:0 auto 0 auto;
   display:inline-block;
-  text-align:left;
-  padding-top:2rem;
+  text-align:center;
+  font-size: 150%;
+  color: white;
 }
+
 .skills-img{
   height: 2rem;
 }
-.skills-sect{
-  color: white;
-  text-align: center;
-}
-.skills1 {
-  text-align: center;
-  background-color: green;
-}
-
-.skills2 {
-  text-align: center;
-  background-color: orange;
-  margin: 0;
-}
 
 
-.topHeading {
-  font-size: 4.5rem;
-  color: white;
-}
+
+
 
 .description {
   border: 1px solid;
   color: black;
   background-color:#EEEEEE;
   border-radius: 2rem;
-}
-
-.textcolor {
-  color: white;
-}
-
-.head {
-  position: absolute;
-  top: 0;
-  z-index:-1;
-}
-
-.top-sect{
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  z-index: 0;
-  width: 100%;
+  padding: 2rem;
 }
 
 
 
-.bottom-sect {
-  transition: 0.7s;
-}
 
 
 
-.small_img {
-  width: 60%;
-  margin: 0 auto;
-}
+
+
+
+
+
+
 .bk-cl-turqoise{
   background-color: #00adb5;
 }

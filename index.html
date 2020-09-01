@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="CSS/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- //Im jordan font -->
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <!-- // -->
 
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -62,25 +65,30 @@
 
   <section>
     <div class="head">
-      <img class="space" src="myimages/space.png" alt="" width="100%">
+      <img style="object-fit:cover" src="myimages/space.png" alt="" width="100%">
     </div>
 
     <div class="top-sect">
-      <div class="bitmoji">
-        <img class="" style="padding-top:1rem" src="myimages/bitmoji_hello.png" alt="" width="60%">
+      <div>
+        <img src="myimages/bitmoji_hello.png" alt="" height="35%">
       </div>
-      <br>
+
+
+      <div class="intro">
+        <p id="im-jordan">I'm Jordan</p>
+        <p><em>BSc Motorsport Engineering Graduate</em></p>
+        <p><em>Self-Taught Software Developer</em></p>
+      </div>
 
       <hr class="wht-hr">
-      <div class="intro" style="color:white; height:auto">
-        <p class="topHeading">I'm Jordan</p>
-        <p class="col-md-12 para1 " style="color:white"><em>BSc Motorsport Engineering Graduate & Self Taught Software Developer</em></p>
+
+      <div class="intro">
+        <p> An Engineering graduate using my mathematical and logic oriented background to build a career in software.</p>
         <br>
-        <p class="para2 " style="color:white"> An Engineering grad using my strong mathematical and logic oriented skillset to build a career in software.</p>
-        <br>
-        <p class="para3 ">Currently based in <strong>Manchester</strong> <img id="flag" src="https://openmoji.org/data/color/svg/1F1EC-1F1E7.svg" width="30" alt="UK flag">
+        <p>Currently based in <strong>Manchester</strong> <img id="flag" src="https://openmoji.org/data/color/svg/1F1EC-1F1E7.svg" width="30" alt="UK flag">
         </p>
       </div>
+
       <hr class="wht-hr">
 
     </div>
@@ -91,7 +99,7 @@
   <section class=" ">
     <div class="skills">
       <div id="carouselExampleCaptions" class="carousel slide" style="" data-ride="carousel" data-interval="4000">
-        <h2 style="text-align:center; color:white"><u>Skills & Technologies</u></h2>
+        <h2 id="im-jordan">Skills & Technologies</h2>
         <ol class="carousel-indicators" style="margin-bottom:0">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -99,65 +107,54 @@
         </ol>
         <div class="carousel-inner">
 
-          <div class="carousel-item active" style="background:rgba(187, 225, 250,0.2); color: white">
+          <div class="carousel-item active">
             <div class="skills-div" style="">
               <!-- <img class="skills-img" src="myimages/js.png" alt=""> -->
-              <p style="padding-left: 2rem">Javascript, jQuery</p>
-              <hr id="skills-hr">
+              <p>Javascript, jQuery</p>
+              <hr>
               <!-- <img class="skills-img" src="myimages/python.png" alt=""> -->
-              <p style="padding-left: 2rem">Python</p>
-              <hr id="skills-hr">
+              <p>Python</p>
+              <hr>
               <!-- <img class="skills-img" src="myimages/css.png" alt=""> -->
-              <p style="padding-left: 2rem">CSS, Bootstrap</p>
-              <hr id="skills-hr">
+              <p>CSS, Bootstrap</p>
+              <hr>
               <!-- <img class="skills-img" src="myimages/html.png" alt=""> -->
-              <p style="padding-left: 2rem">HTML</p>
-              <hr id="skills-hr">
+              <p>HTML</p>
+              <hr>
               <!-- <img class="skills-img" src="myimages/computer.png" alt=""> -->
-              <p style="padding-left: 2rem">Matlab</p>
+              <p>Matlab</p>
               <br>
-            </div>
-
-            <div class="carousel-caption d-none d-md-block">
-
-              <h5><u>Languages & Tools</u></h5>
             </div>
           </div>
 
 
-          <div class="carousel-item" style="background:rgb(50,130,184,0.2); color:white">
+          <div class="carousel-item">
             <div class="skills-div" style="">
-              <p style="padding-left: 2rem">Data Analysis</p>
-              <hr id="skills-hr">
-              <p style="padding-left: 2rem">Computer Aided Design</p>
-              <hr id="skills-hr">
-              <p style="padding-left: 2rem">Mathematics</p>
-              <hr id="skills-hr">
-              <p style="padding-left: 2rem">Web Development</p>
-              <hr id="skills-hr">
-              <p style="padding-left: 2rem">Electronics</p>
+              <p>Data Analysis</p>
+              <hr>
+              <p>Computer Aided Design</p>
+              <hr>
+              <p>Mathematics</p>
+              <hr>
+              <p>Web Development</p>
+              <hr>
+              <p>Electronics</p>
               <br>
-              <div class="carousel-caption d-none d-md-block">
-                <h5><u>General</u></h5>
-              </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background:rgb(135,206,235,0.2); color:white">
+          <div class="carousel-item">
             <div class="skills-div">
-              <p style="padding-left: 2rem">Interpersonal Skills</p>
-              <hr id="skills-hr">
-              <p style="padding-left: 2rem">Teamwork</p>
-              <hr id="skills-hr">
-              <p style="padding-left: 2rem">Organisation</p>
-              <hr id="skills-hr">
-              <p style="padding-left: 2rem">Tech Trend Awareness</p>
-              <hr id="skills-hr">
-              <p style="padding-left: 2rem">Independant Learning</p>
+              <p>Interpersonal Skills</p>
+              <hr>
+              <p>Teamwork</p>
+              <hr>
+              <p>Organisation</p>
+              <hr>
+              <p>Tech Trend Awareness</p>
+              <hr>
+              <p>Independant Learning</p>
               <br>
-              <div class="carousel-caption d-none d-md-block">
-                <h5><u>Miscellaneous</u></h5>
-              </div>
             </div>
           </div>
 
@@ -178,35 +175,33 @@
   <section class="bottom-sect">
 
     <div class="bottom-sect experience-div">
-      <div class="container" style="color:white">
+      <div class="container-fluid">
         <div class="row" style="padding-bottom:0">
           <div class="col-lg-12">
-            <h2 id="h1experience"><u>Recent Experience</u></h2>
+            <h2 id="im-jordan">Recent Experience</h2>
 
           </div>
 
         </div>
         <div class="row">
           <div class="description2 col-lg-3 col-md-12">
-            <h3>Software Analyst</h3>
+            <h3><u>Software Analyst</u></h3>
             <p>“Autonomous Road Event Activity Detection” Paper (Co-author)</p>
-            <p><em>Jul2019-Feb2020</em></p>
+            <p><em>(Jul2019-Feb2020)</em></p>
           </div>
           <div class="description col-lg-9 col-md-12">
-            <div class="newul" style="display:inline-block">
-              <p>Worked in a small team of software engineers and researchers, to develop a video annotation application used to train a newly developed vehicular A.I with OpenCV.</p>
+              <p>Worked in a small team of software engineers and researchers, to develop a video annotation application. Used to train a newly developed vehicular A.I with OpenCV.</p>
               <hr class="blk-hr">
-              <p>Helped implement a Python script to test annotated files against a set of requirements, negating common errors made during the annotation process, speeding up useable data output from the team.</p>
+              <p>Helped implement a Python script to test annotated files against a set of requirements. Negated common errors made during the annotation process, speeding up useable data output for the team.</p>
               <hr class="blk-hr">
               <p>Saved 100+ team hours by helping to standardise future file submissions.</p>
-            </div>
           </div>
         </div>
         <div class="row">
           <div class="description2 col-lg-3 col-md-12" style="text-align:center">
-            <h3>Motorsport Engineering Student</h3>
+            <h3><u>Motorsport Engineering Student</u></h3>
             <p>Oxford Brookes University</p>
-            <p><em>Sept2017-May2020</em></p>
+            <p><em>(Sept2017-May2020)</em></p>
           </div>
           <div class=" description col-lg-9 col-md-12 newul">
               <p>Developed a lap time simulator using MATLAB and handwritten mathematical modelling.</p>
@@ -218,9 +213,9 @@
         </div>
         <div class="row">
           <div class="description2 col-lg-3 col-md-12" style="text-align:center">
-            <h3>Bartender</h3>
+            <h3><u>Bartender</u></h3>
             <p>The Botanist - Alderly Edge </p>
-            <p><em>Apr2016-Sept2019</em></p>
+            <p><em>(Apr2016-Sept2019)</em></p>
           </div>
           <div class="description col-lg-9 col-md-12 newul">
               <p>Challenged myself within a unfamiliar sector with no previous hospitality experience.</p>
