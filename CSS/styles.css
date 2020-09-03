@@ -109,7 +109,7 @@ ol.carousel-indicators li.active{
   margin: 0 auto;
   height:auto;
   color: white;
-  animation: opacity 10s;
+  animation: opacity 7s;
 }
 .intro p{
   font-size: 200%;
