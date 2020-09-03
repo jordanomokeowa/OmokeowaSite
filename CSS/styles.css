@@ -89,6 +89,7 @@ ol.carousel-indicators li.active{
   top:2vh;
 }
 #hello-img{
+  padding-top:3vh;
   animation: opacity 5s;
 }
 #im-jordan{
