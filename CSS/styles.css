@@ -96,7 +96,7 @@ ol.carousel-indicators li.active{
   font-size: 6rem;
   font-family: 'Amatic SC', cursive;
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   animation-delay: 5s;
   animation: opacity 5s;
 }
@@ -109,10 +109,11 @@ ol.carousel-indicators li.active{
   margin: 0 auto;
   height:auto;
   color: white;
-  animation: opacity 7s;
 }
 .intro p{
   font-size: 200%;
+  animation: opacity 7s;
+  animation-delay: calc(attr(data-value)*10000s);
 }
 
 hr{
@@ -149,6 +150,12 @@ hr{
   font-size: 1.7rem;
   padding: 0 0;
   text-align: left;
+}
+.description{
+  font-size: 2vh;
+}
+.description hr{
+  border: 1px solid black;
 }
 /* ================================================== */
 
