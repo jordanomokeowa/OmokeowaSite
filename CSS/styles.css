@@ -11,8 +11,16 @@
 
 }
 /* ================= */
-
-
+/* =======ANIMATIONS======== */
+@keyframes opacity {
+  from{opacity: 0;}
+  to{opacity: 1}
+}
+@keyframes slidein {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+/* ============================= */
 /* tag selectors*/
 /* html {
   box-sizing: border-box;
@@ -28,14 +36,6 @@ body{
   color: white;
 }
 
-
-
-
-.wht-hr{
-  border-top: 0.1rem solid white;
-  width: 70%;
-  margin: 1rem auto;
-}
 
 
 table {
@@ -58,10 +58,6 @@ li{
 }
 
 
-#body-projects{
-  background-color: black;
-  color: white;
-}
 
 /* Bootstrap edits */
 
@@ -93,12 +89,18 @@ ol.carousel-indicators li.active{
   position: relative;
   top:2vh;
 }
+#hello-img{
+  animation: opacity 5s;
+}
 #im-jordan{
   font-size: 6rem;
   font-family: 'Amatic SC', cursive;
   text-align: center;
   padding-bottom: 4rem;
+  animation-delay: 5s;
+  animation: opacity 5s;
 }
+
 .intro{
   width: 65%;
   display: inline-block;
@@ -107,9 +109,18 @@ ol.carousel-indicators li.active{
   margin: 0 auto;
   height:auto;
   color: white;
+  animation: opacity 10s;
 }
 .intro p{
   font-size: 200%;
+}
+.wht-hr{
+  border-top: 0.1rem solid white;
+  width: 70%;
+  margin: 1rem auto;
+}
+hr{
+  animation: slidein 5s;
 }
 /* TOP END */
 
