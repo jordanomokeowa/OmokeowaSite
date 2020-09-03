@@ -86,7 +86,6 @@ ol.carousel-indicators li.active{
   display: block;
   margin: 0 auto;
   height: auto;
-  position: relative;
   top:2vh;
 }
 #hello-img{
@@ -114,13 +113,13 @@ ol.carousel-indicators li.active{
 .intro p{
   font-size: 200%;
 }
-.wht-hr{
+
+hr{
   border-top: 0.1rem solid white;
   width: 70%;
   margin: 1rem auto;
-}
-hr{
   animation: slidein 5s;
+  opacity: 0.3;
 }
 /* TOP END */
 
