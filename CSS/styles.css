@@ -1,15 +1,5 @@
 /* ==== MOBILE ========== */
-@media screen and (max-width: 900px){
-  #im-jordan{
-    font-size: 6rem;
-    font-family: 'Amatic SC', cursive;
-  }
 
-  .intro p{
-    font-size: 200%;
-  }
-
-}
 /* ================= */
 /* =======ANIMATIONS======== */
 @keyframes opacity {
@@ -67,7 +57,7 @@ li{
 ol.carousel-indicators li{
   height:0.1vh;
   width: 0.1vw;
-  background-color:black;
+  background-color:darkgrey;
 }
 
 ol.carousel-indicators li.active{
@@ -147,12 +137,17 @@ hr{
   margin: 0 auto;
 }
 .row{
-  font-size: 1.7rem;
-  padding: 0 0;
   text-align: left;
 }
-.description{
+
+
+.description {
   font-size: 2vh;
+  border: 0.3vh grey solid;
+  color: black;
+  background-color:#EEEEEE;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 .description hr{
   border: 1px solid black;
@@ -162,23 +157,11 @@ hr{
 
 
 
-.description2 {
+.jobTitle {
   margin:1rem auto 2rem auto;
-  text-align: center;
+  /* text-align: center; */
   padding: 1rem auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .skills{
@@ -202,13 +185,6 @@ hr{
 
 
 
-.description {
-  border: 1px solid;
-  color: black;
-  background-color:#EEEEEE;
-  border-radius: 2rem;
-  padding: 2rem;
-}
 
 
 
@@ -221,7 +197,7 @@ hr{
 
 
 
-.bk-cl-turqoise{
+/* .bk-cl-turqoise{
   background-color: #00adb5;
 }
 .testGreen{
@@ -235,4 +211,4 @@ hr{
 }
 .testGrey{
   background-color: grey;
-}
+} */

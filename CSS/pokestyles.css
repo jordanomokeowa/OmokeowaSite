@@ -1,0 +1,150 @@
+/* ========================MOBILE====================== */
+@media only screen and (max-width 900px){
+
+  #poke-ball{
+    margin: 0 auto;
+    width: 50vw;
+  }
+
+  #poke-img{
+    height: 35vh;
+  }
+
+  .pokeDexStyle{
+    border: 2rem solid red;
+    background-color: skyblue;
+    text-align: center;
+    height: 50vh;
+    width: auto;
+    /* position: relative; */
+  }
+
+
+}
+
+/* ================================================================== */
+
+@keyframes entrance {
+  0% {transform: scale(1);}
+  1%, 2% {transform: scale(0.9) rotate(-3deg);}
+  3%, 5%, 7%, 9% {transform: scale(1.1) rotate(3deg);}
+  4%, 6%, 8% {transform: scale(1.1) rotate(-3deg);}
+  10% {transform: scale(1) rotate(0);}
+
+  /* divided by 10 to manually include a delay between infinitly looped animation */
+
+}
+/* ======================================================================= */
+
+h1,h2{
+  text-transform: capitalize;
+  display: block;
+}
+
+p{
+  font-size: 40%;
+}
+body{
+  font-family: Rubik;
+  background-color: black;
+
+}
+button{
+  height: auto;
+  font-size: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 1.5rem;
+}
+
+#pokeID{
+  height: 3vh;
+  font-size: xx-large
+}
+
+#game-div{
+  height: auto;
+}
+#game-div button{
+  border-radius: 3rem;
+  width: 20vw;
+  margin: 0.3rem 0.3rem;
+  height: 3vh;
+  font-size: 1.5vh;
+}
+#feeling-lucky{
+  font-size: 3vh;
+}
+#type1, #type2{
+  font-weight: bold;
+}
+.head {
+  position: absolute;
+  top: 0;
+  z-index:-1;
+}
+.typeDiv{
+  position:absolute;
+  right:1vw;
+  top:30vh;
+  text-align:left;
+  font-size: 150%;
+  background-color: lightblue;
+  height: auto;
+  padding: 1vh 2vw;
+  border-radius: 1rem;
+  margin-bottom: 1vh;
+}
+
+#lucky-div button{
+  width:30%;
+  margin-bottom:0.5rem;
+  height: 5vh;
+  font-size: 2rem;
+}
+#game-div hr, #lucky-div hr{
+  margin-bottom: 5%;
+}
+
+#poke-ball, #poke-img{
+  margin: 0 auto;
+  height: 28vh;
+}
+
+#poke-img{
+  animation: 10s linear 2s infinite entrance;
+}
+
+.hinge{
+  background-color: red;
+  border-radius: 3rem;
+  border: 0.5rem solid black;
+  height: 3vh;
+}
+.guessDiv{
+  font-size: 5vh;
+  background-color: lightblue;
+  border-radius: 2rem;
+  display: block;
+  padding: 1vh 3vw;
+}
+#pic-div{
+  margin: 4vh auto 2vh auto;
+}
+
+.pokeDexStyle{
+  border: 2rem solid red;
+  background-color: skyblue;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  border-radius: 3rem;
+}
+.pokeDexStyle2{
+  border: 2rem solid red;
+  background-color: skyblue;
+  text-align: center;
+  /* position: relative; */
+  height: auto;
+  padding: 3rem 0 0 0;
+  border-radius: 3rem;
+}

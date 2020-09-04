@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Pok&#233;Stat</title>
+  <!-- stylesheets -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- bootstrap end -->
+  <link rel="stylesheet" type="text/css" href="css/pokestyles.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+
+  <!-- bootstrap end -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- bootstrap scripts  -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+</head>
+<!-- temp back button -->
+<!--  -->
+
+<body>
+  <!-- NAVBAR -->
+  <section>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="Index.html">Jordan Omokeowa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="pokeproject.html">Pok&#233; Project<span class="sr-only">(current)</span></a>
+          </li> -->
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="">About Me<span class="sr-only">(current)</span></a>
+          </li> -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact Me</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.linkedin.com/in/jordanomokeowa/">Linkedn</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://github.com/jordanomokeowa">Github</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- //heading -->
+  <div class="" style="position:absolute;right:0">
+    <input id="pokeID" placeholder="Name / National ID" value="">
+    <button id="poke-search" onclick="pokeSubmit()">Search</button>
+  </div>
+  <button><a href="pokeproject.html">BACK</a></button>
+
+  <div class="head">
+    <img style="object-fit:cover" src="myimages/space.png" alt="" width="100%">
+  </div>
+
+
+  <!-- heading -->
+  <div class="container-fluid">
+
+    <div class="row justify-content-center">
+      <div class="pokeDexStyle col-lg-9 col-md-11 col-sm-11">
+        <h1 style="font-size:5rem; border-bottom: 1px solid grey; display:inline-block" id="results">National Pok&#233;Dex</h1>
+
+        <br>
+        <div id="pic-div" style="height:auto; display: inline-block;background-color:lightblue; border-radius:100%">
+          <img id="poke-ball" src="myimages/pokeball.png" alt="pokeball">
+          <img id="poke-img" src="" alt="">
+        </div>
+        <div class="guessDiv" hidden>
+          <p id="num-type"></p>
+          <p id="guesses"></p>
+        </div>
+        <br>
+        <div class="typeDiv" hidden>
+          <h1 style="padding-bottom: 1vh;">Types:</h1>
+          <h2 id="type1"></h2>
+          <h2 id="type2"></h2>
+        </div>
+
+        <!-- <h2 id="num-type"></h2> -->
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="row justify-content-center">
+      <div class="hinge col-lg-8 col-sm-10">
+
+      </div>
+    </div>
+
+
+
+    <div id="lucky-div" class="row justify-content-center">
+
+      <div class="col-lg-9 col-md-11 col-sm-11 pokeDexStyle2">
+        <button id="start-btn" onclick="startGame()">Pok&#233; Type Game</button>
+        <h1 id="feeling-lucky">Im Feeling Lucky</h1>
+        <hr>
+        <button onclick="feelingLucky(1)">GENERATION 1</button> <button onclick="feelingLucky(2)">GENERATION 2</button>
+        <br>
+        <br>
+        <button onclick="feelingLucky(3)">GENERATION 3</button><button onclick="feelingLucky(4)">GENERATION 4</button>
+        <h6 style="color:grey">PokeDex v1.02 by Jordan Omokeowa</h6>
+
+      </div>
+
+    </div>
+
+    <div id="game-div" class="row justify-content-center" hidden>
+      <div class="col-lg-9 col-sm-11 pokeDexStyle">
+        <h1 id="choice-head">Select The Correct Types...</h1>
+        <button style="background-color:#A8A77A" id="t1" value="normal" onclick="answerSubmit(1), this.disabled = true">Normal</button>
+        <button style="background-color:#C22E28" id="t2" value="fighting" onclick="answerSubmit(2), this.disabled = true">Fighting</button>
+        <button style="background-color:#A98FF3" id="t3" value="flying" onclick="answerSubmit(3), this.disabled = true">Flying</button>
+        <br>
+        <button style="background-color:#A33EA1" id="t4" value="poison" onclick="answerSubmit(4), this.disabled = true">Poison</button>
+        <button style="background-color:#E2BF65" id="t5" value="ground" onclick="answerSubmit(5), this.disabled = true">Ground</button>
+        <button style="background-color:#B6A136" id="t6" value="rock" onclick="answerSubmit(6), this.disabled = true">Rock</button>
+        <br>
+        <button style="background-color:#A6B91A" id="t7" value="bug" onclick="answerSubmit(7), this.disabled = true">Bug</button>
+        <button style="background-color:#735797" id="t8" value="ghost" onclick="answerSubmit(8), this.disabled = true">Ghost</button>
+        <button style="background-color:#B7B7CE" id="t9" value="steel" onclick="answerSubmit(9), this.disabled = true">Steel</button>
+        <br>
+        <button style="background-color:#EE8130" id="t10" value="fire" onclick="answerSubmit(10), this.disabled = true">Fire</button>
+        <button style="background-color:#6390F0" id="t11" value="water" onclick="answerSubmit(11), this.disabled = true">Water</button>
+        <button style="background-color:#7AC74C" id="t12" value="grass" onclick="answerSubmit(12), this.disabled = true">Grass</button>
+        <br>
+        <button style="background-color:#F7D02C" id="t13" value="electric" onclick="answerSubmit(13), this.disabled = true">Electric</button>
+        <button style="background-color:#F95587" id="t14" value="psychic" onclick="answerSubmit(14), this.disabled = true">Psychic</button>
+        <button style="background-color:#96D9D6" id="t15" value="ice" onclick="answerSubmit(15), this.disabled = true">Ice</button>
+        <br>
+        <button style="background-color:#6F35FC" id="t16" value="dragon" onclick="answerSubmit(16), this.disabled = true">Dragon</button>
+        <button style="background-color:#705746" id="t17" value="dark" onclick="answerSubmit(17), this.disabled = true">Dark</button>
+        <button style="background-color:#D685AD" id="t18" value="fairy" onclick="answerSubmit(18), this.disabled = true">Fairy</button>
+        <h6 style="color:grey">PokeDex v1.02 by Jordan Omokeowa</h6>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="pokejs.js" charset="utf-8"></script>
+
+</body>
+
+</html>
