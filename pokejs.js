@@ -297,7 +297,7 @@ function feelingLucky(i) {
 
 // Recall data from user input pokeID num value. START//
 function pokeSubmit() {
-  var param = document.getElementById("pokeID").value;
+  var param = document.getElementById("pokeID").value.toLowerCase();
   var pokeURLCom = pokeURL + param
   console.log(pokeURLCom)
 
