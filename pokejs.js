@@ -3,7 +3,7 @@
 
 //INITALIally ASSIGNING VARIABLES--------------------------------------
 //source for json
-var pokeURL = "http://pokeapi.co/api/v2/pokemon/";
+var pokeURL = "https://pokeapi.co/api/v2/pokemon/";
 //
 //high res img source
 var pokeURL2 = "https://cdn.traction.one/pokedex/pokemon/"
