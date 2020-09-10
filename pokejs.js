@@ -19,7 +19,10 @@ var correctAns =[];
 
 var type1 = document.getElementById("type1").innerText.toLowerCase();
 
-
+document.addEventListener('keypress',(e)=>{
+  const keypressed = e.key;
+  feelingLucky(keypressed);
+})
 //--------------------------------------------------------------------
 //INIT FUNCTIONS---------------------------------------------------------------------------
 // GO HOME FUNCTION=============
